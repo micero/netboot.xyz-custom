@@ -20,6 +20,7 @@ goto custom_exit
 :option_one
 kernel https://www.dropbox.com/s/gro1389f1ico13b/bzImage?dl=1
 initrd https://www.dropbox.com/s/c3h0muwjxf7yk3o/initrd?dl=1
+imgargs bzImage load_ramdisk=1 prompt_ramdisk=0 rw printk.time=0
 boot || goto custom_exit
 
 :option_two
